@@ -1,0 +1,16 @@
+# Complete the solution so that the function will break up camel casing, using a space between words.
+
+# Example
+# "camelCasing"  =>  "camel Casing"
+# "identifier"   =>  "identifier"
+# ""             =>  ""
+
+def solution(s):
+    slist = []
+    for i in s:
+        slist.append(i)
+    for pos, char in enumerate(slist):
+        if char.isupper():
+            slist[pos - 1]+= ' '
+    slist = ''.join(slist)
+    return slist
