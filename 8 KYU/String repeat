@@ -1,0 +1,6 @@
+# The simplest way to do it
+
+
+
+def repeat_str(repeat, string):
+    return str(string * repeat)
