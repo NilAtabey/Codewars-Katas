@@ -1,0 +1,9 @@
+# Is it a palindrome?
+
+def is_palindrome(s):
+    if len(s) <= 1:
+        return True
+    if s.lower()[0] == s.lower()[-1]:
+        return is_palindrome(s.lower()[1:-1])
+    else:
+        return False
